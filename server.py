@@ -43,3 +43,8 @@ def write_to_csv(data):
         message = data["message"]
         csv_writer = csv.writer(database2, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
         csv_writer.writerow([email, subject, message])
+
+
+# export FLASK_APP=server.py
+#export FLASK_ENV=development
+#flask run
